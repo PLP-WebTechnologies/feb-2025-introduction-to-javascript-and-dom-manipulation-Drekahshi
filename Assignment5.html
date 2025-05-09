@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Manipulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            transition: background-color 0.5s ease;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        section {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .highlight {
+            background-color: yellow;
+            padding: 2px 5px;
+        }
+        #dynamicElement {
+            padding: 15px;
+            background-color: #f0f0f0;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Conservation Efforts</h1>
+        <p>Learn how we can protect our planet through conservation initiatives.</p>
+    </header>
+
+    <main>
+        <section id="text-section">
+            <h2>Change Text Content</h2>
+            <p id="changeable-text">Conservation efforts are crucial for preserving biodiversity and ensuring a sustainable future for generations to come.</p>
+            <button id="change-text-btn">Change Text</button>
+        </section>
+
+        <section id="style-section">
+            <h2>Modify CSS Styles</h2>
+            <p id="style-demo">This paragraph's style will change with the buttons below.</p>
+            <div>
+                <button id="color-btn">Change Color</button>
+                <button id="size-btn">Change Size</button>
+                <button id="bg-btn">Toggle Dark Mode</button>
+            </div>
+        </section>
+
+        <section id="element-section">
+            <h2>Add/Remove Elements</h2>
+            <button id="add-btn">Add Element</button>
+            <button id="remove-btn">Remove Element</button>
+            <div id="element-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created with HTML, CSS, and JavaScript</p>
+    </footer>
+
+    <!-- Corrected script reference -->
+    <script src="Assignment.js"></script>
+</body>
+</html>
